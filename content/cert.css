@@ -1,0 +1,202 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: logoFont;
+    src: url("fonts/AUBREY1__.TTF");
+}
+
+@font-face {
+    font-family: bodyfont;
+    src: url("fonts/Garamond\ Bold\ font.ttf");
+}
+
+@font-face {
+    font-family: headlinefont;
+    src: url("fonts/Garamond\ Bold\ font.ttf");
+}
+
+@font-face {
+    font-family: contentfont;
+    src: url("fonts/GARAM.ttf");
+}
+
+:root {
+    --bodyback: #ebebeb;
+    --logoColor: #f7ce3e;
+    --certColor: #f5f5f5;
+    --linksColor: #f5f5f5;
+    --headback: #1a2930;
+    --menuback: #0b3c5d;
+    --footerback: var(--headback);
+    --menuLinkcolor: #c5c1c0;
+    --menuLinkHoverback: var(--bodyback);
+    --logofont: logofont;
+    --bodyfont: bodyfont;
+    --headlinefont: headlinefont;
+    --textcolor: #c5c1c0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.all .home {
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    top: 25px;
+    left: -60px;
+    text-align: right;
+    user-select: none;
+}
+
+.all .home a {
+    background-color: var(--bodyback);
+    color: var(--headback);
+    font-family: contentfont;
+    font-size: 20px;
+    display: block;
+    padding: 10px 25px;
+    border-radius: 0 10px 10px 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.all .home:hover a {
+    color: crimson;
+    transform: translateX(20px);
+}
+
+.all {
+    width: 100%;
+    min-height: 100%;
+    background: grey url("../images/eduBack.jpg");
+    background-size: cover;
+    background-position: center;
+    background-origin: border-box;
+    background-attachment: fixed;
+    background-blend-mode: soft-light;
+    font-family: 'poppins', sans-serif;
+}
+
+.all .head {
+    width: 100%;
+    height: 80px;
+    background: var(--headback);
+    color: var(--bodyback);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.all .certs {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.all .certs .container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.all .certs .container:not(:first-child) {
+    border-top: 5px double var(--menuback);
+    padding-top: 25px;
+    margin-top: 25px;
+}
+
+.all .certs .container:last-child
+/*and :not(:first-child)*/
+
+{
+    border-bottom: 5px double var(--menuback);
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+
+.all .certs .container .num {
+    height: min-content;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 30px;
+    background: var(--headback);
+    color: #ff8300;
+    box-shadow: 0 0 5px #ff8300;
+    margin-right: 10px;
+}
+
+.all .certs .container img {
+    width: 700px;
+    height: 500px;
+    user-select: none;
+}
+
+.all .certs .container .text {
+    width: 350px;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    margin-left: 10px;
+    /* margin-left: -100px; */
+    /* position: relative;
+    top: -100px;
+    right: 90px; */
+    background: var(--menuback);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.all .certs .container .text .cert {
+    font-size: 25px;
+    font-weight: 600;
+    color: whitesmoke;
+}
+
+.all .certs .container .text .year {
+    font-size: 20px;
+    margin-top: 10px;
+    font-style: italic;
+    color: #ff8300;
+}
+
+@media screen and (min-width:750px) and (max-width:1175px) {
+    .all .certs .container .text {
+        margin-top: 30px;
+    }
+    .all .certs .container .num {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .all .certs .container .num {
+        margin-bottom: 20px;
+    }
+    .all .certs .container .text {
+        margin-top: 30px;
+    }
+    .all .certs .container img {
+        height: 100%;
+        min-width: 300px;
+        width: 100%;
+    }
+}
