@@ -44,7 +44,7 @@
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    background: grey url("../images/eduBack.jpg");
+    background: rgb(184, 190, 192) url("../images/eduBack.jpg");
     background-size: cover;
     background-position: center;
     background-origin: border-box;
@@ -64,13 +64,13 @@
 }
 
 .education>h2 {
-    color: white;
+    color: var(--menuback);
     font-size: 50px;
     text-align: center;
     text-transform: capitalize;
     padding: 19px 0;
     text-decoration: underline var(--logoColor);
-    background: var(--headback);
+    /* background: var(--headback); */
 }
 
 .education .home {
@@ -202,6 +202,7 @@
 @media screen and (max-width:850px) {
     .education>h2 {
         padding-left: 50px;
+        padding-top: 90px;
     }
     .education .container {
         padding-top: 60px;

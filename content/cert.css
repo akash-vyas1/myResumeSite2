@@ -75,7 +75,7 @@
 .all {
     width: 100%;
     min-height: 100%;
-    background: grey url("../images/eduBack.jpg");
+    background: rgb(184, 190, 192) url("../images/eduBack.jpg");
     background-size: cover;
     background-position: center;
     background-origin: border-box;
@@ -85,66 +85,83 @@
 }
 
 .all .head {
-    width: 100%;
+    padding: 10px;
+    width: max-content;
+    margin: auto;
     height: 80px;
-    background: var(--headback);
-    color: var(--bodyback);
+    /* background: var(--headback); */
+    color: var(--menuback);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 40px;
+    text-decoration: underline solid var(--logoColor);
 }
 
 .all .certs {
-    padding: 20px;
+    /* padding: 20px; */
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     flex-wrap: wrap;
+    justify-content: flex-start;
     box-sizing: border-box;
 }
 
 .all .certs .container {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
+    justify-self: center;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    padding-left: 75px;
 }
 
-.all .certs .container:not(:first-child) {
-    border-top: 5px double var(--menuback);
-    padding-top: 25px;
-    margin-top: 25px;
+.all .certs .container:first-child {
+    margin-top: -10px;
 }
 
-.all .certs .container:last-child
-/*and :not(:first-child)*/
-
-{
-    border-bottom: 5px double var(--menuback);
-    padding-bottom: 25px;
-    margin-bottom: 25px;
+.all .certs .container:first-child .topbor {
+    width: 150%;
+    height: 5px;
+    background: none;
+    margin-top: 0px;
+    border-radius: 0px;
 }
 
-.all .certs .container .num {
-    height: min-content;
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 30px;
+.all .certs .container:not(:first-child) .topbor {
+    width: 150%;
+    height: 5px;
     background: var(--headback);
-    color: #ff8300;
-    box-shadow: 0 0 5px #ff8300;
-    margin-right: 10px;
+    margin-top: 15px;
+    border-radius: 10px;
 }
 
 .all .certs .container img {
     width: 700px;
     height: 500px;
     user-select: none;
+}
+
+.all .certs .container .img .num {
+    height: min-content;
+    padding: 7px;
+    width: 40px;
+    border-radius: 10px;
+    font-size: 25px;
+    background: var(--headback);
+    color: #ED1B24;
+    box-shadow: 0 0 5px rgb(53, 53, 53);
+    margin-right: 10px;
+    position: relative;
+    top: 25px;
+    left: -15px;
 }
 
 .all .certs .container .text {
@@ -155,7 +172,9 @@
     flex-direction: column;
     align-items: center;
     align-self: center;
+    justify-self: flex-start;
     margin-left: 10px;
+    margin-top: 10px;
     /* margin-left: -100px; */
     /* position: relative;
     top: -100px;
@@ -178,25 +197,44 @@
     color: #ff8300;
 }
 
+.footer {
+    background: var(--footerback);
+    color: #f7f5eb;
+    text-align: center;
+    height: 40px;
+    text-align: right;
+    padding-right: 25px;
+    line-height: 40px;
+    font-size: 20px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    font-family: 'poppins', sans-serif;
+}
+
 @media screen and (min-width:750px) and (max-width:1175px) {
     .all .certs .container .text {
         margin-top: 30px;
     }
-    .all .certs .container .num {
-        margin-bottom: 20px;
-    }
 }
 
 @media screen and (max-width:750px) {
-    .all .certs .container .num {
-        margin-bottom: 20px;
+    .all .certs .container {
+        justify-content: center;
+        width: 90%;
+        padding-left: 50px;
     }
     .all .certs .container .text {
-        margin-top: 30px;
+        margin-top: 20px;
+        justify-self: center;
     }
     .all .certs .container img {
         height: 100%;
         min-width: 300px;
         width: 100%;
+    }
+    .all .head {
+        padding-top: 100px;
+        padding-bottom: 50px;
     }
 }
