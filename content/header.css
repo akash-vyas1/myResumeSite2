@@ -179,20 +179,26 @@
     display: inline-flex;
     flex-direction: column;
     list-style-type: none;
+    padding: 0 7px;
 }
 
 .header .toplinks ul li a {
     font-size: 35px;
     padding: 7px;
-    margin: auto 10px;
+    margin: auto;
     text-align: center;
-    color: #1d2731;
+    color: #1d1e22;
     text-decoration: none;
     border-bottom: 0px solid var(--logoColor);
     transition: 0.2s linear;
 }
 
 .header .toplinks ul li a:hover {
-    color: var(--menuback);
+    /* color: var(--menuback); */
+    color: #106bc0;
     transform: scale(1.13);
+}
+
+.header .toplinks ul li:not(:first-child) {
+    border-left: 2px solid var(--logoColor);
 }

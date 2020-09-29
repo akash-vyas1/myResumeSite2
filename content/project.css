@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: logoFont;
+    src: url("fonts/AUBREY1__.TTF");
+}
+
+@font-face {
+    font-family: bodyfont;
+    src: url("fonts/Garamond\ Bold\ font.ttf");
+}
+
+@font-face {
+    font-family: headlinefont;
+    src: url("fonts/Garamond\ Bold\ font.ttf");
+}
+
+@font-face {
+    font-family: contentfont;
+    src: url("fonts/GARAM.ttf");
+}
+
+ :root {
+    --bodyback: #ebebeb;
+    --logoColor: #f7ce3e;
+    --certColor: #f5f5f5;
+    --linksColor: #f5f5f5;
+    --headback: #1a2930;
+    --menuback: #0b3c5d;
+    --footerback: var(--headback);
+    --menuLinkcolor: #c5c1c0;
+    --menuLinkHoverback: var(--bodyback);
+    --logofont: logofont;
+    --bodyfont: bodyfont;
+    --headlinefont: headlinefont;
+    --textcolor: #c5c1c0;
+}
+
+html,
+body {
+    height: 100%;
+    background: rgb(184, 190, 192) url("../images/eduBack.jpg");
+    background-size: cover;
+    background-position: center;
+    background-origin: border-box;
+    background-attachment: fixed;
+    background-blend-mode: soft-light;
+}
+
+.all {
+    width: 100%;
+    height: 100%;
+}
+
+.all .headline {
+    color: var(--menuback);
+    font-size: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 19px 0;
+    text-decoration: underline var(--logoColor);
+}
+
+.all .allproj {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.all .allproj .project {
+    min-width: 300px;
+    width: 357px;
+    min-height: min-content;
+    padding: 15px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    background: var(--headback);
+    border-radius: 20px;
+    box-shadow: 0 0 10px grey;
+    color: whitesmoke;
+    margin-left: 25px;
+    justify-content: center;
+}
+
+.all .allproj .project .numcontainer {
+    width: 41px;
+    height: 41px;
+    position: relative;
+    top: -30px;
+    left: -30px;
+}
+
+.all .allproj .project .numcontainer .num {
+    width: 98%;
+    height: 98%;
+    line-height: 1.5;
+    background-color: var(--logoColor);
+    font-size: 25px;
+    text-align: center;
+    border-radius: 10px;
+    color: var(--menuback);
+    box-shadow: 0 0 5px grey;
+    z-index: 30;
+}
+
+.all .allproj .project .head {
+    color: var(--linksColor);
+    font-size: 35px;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px;
+    text-decoration: underline var(--logoColor);
+    position: relative;
+    top: -30px;
+}
+
+.all .allproj .project .techs ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.all .allproj .project .techs ul li {
+    list-style-type: none;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+
+.all .allproj .project .techs ul li a {
+    text-decoration: none;
+    color: var(--bodyback);
+    font-size: 40px;
+}
+
+.all .allproj .project .techs ul li:nth-child(1) a {
+    color: #f16529;
+}
+
+.all .allproj .project .techs ul li:nth-child(2) a {
+    color: #2965f1;
+}
+
+.all .allproj .project .techs ul li:nth-child(3) a {
+    color: #f0db4f;
+}
+
+.all .allproj .project p {
+    text-align: left;
+    padding: 7px;
+    color: var(--logoColor);
+    font-size: 22px;
+}
+
+.all .allproj .project span {
+    padding-left: 10px;
+    color: var(--bodyback);
+    font-size: 20px;
+}
+
+.all .allproj .project span a {
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.footer {
+    width: 100%;
+    background: var(--headback);
+    height: 45px;
+    text-align: right;
+    line-height: 1.7;
+    position: relative;
+    bottom: 0;
+    font-size: 1.4em;
+    padding-right: 1em;
+    color: var(--bodyback);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width:850px) {
+    .all .headline {
+        padding-top: 100px;
+    }
+    .all .project {
+        margin-top: 50px;
+    }
+}
