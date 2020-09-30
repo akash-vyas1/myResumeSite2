@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: logoFont;
+    src: url("fonts/AUBREY1__.TTF");
+}
+
+@font-face {
+    font-family: bodyfont;
+    src: url("fonts/Garamond\ Bold\ font.ttf");
+}
+
+@font-face {
+    font-family: headlinefont;
+    src: url("fonts/Garamond\ Bold\ font.ttf");
+}
+
+@font-face {
+    font-family: contentfont;
+    src: url("fonts/GARAM.ttf");
+}
+
+ :root {
+    --bodyback: #ebebeb;
+    --logoColor: #f7ce3e;
+    --certColor: #f5f5f5;
+    --linksColor: #f5f5f5;
+    --headback: #1a2930;
+    --menuback: #0b3c5d;
+    --footerback: var(--headback);
+    --menuLinkcolor: #c5c1c0;
+    --menuLinkHoverback: var(--bodyback);
+    --logofont: logofont;
+    --bodyfont: bodyfont;
+    --headlinefont: headlinefont;
+    --textcolor: #c5c1c0;
+    /*widths*/
+    --java: 91%;
+    --c: 80%;
+    --js: 85%;
+    --css: 92%;
+    --html: 88%;
+    --jsp: 50%;
+    --servlet: 60%;
+    --springboot: 40%;
+    --jq: 80%;
+    --mysql: 75%;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background: rgb(184, 190, 192) url("../images/eduBack.jpg");
+    background-size: cover;
+    background-position: center;
+    background-origin: border-box;
+    background-attachment: fixed;
+    background-blend-mode: soft-light;
+}
+
+.all {
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.all .head {
+    color: var(--menuback);
+    font-size: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 19px 0;
+    text-decoration: underline var(--logoColor);
+}
+
+.all .allskills {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 30px;
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; */
+    /* display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: repeat(2, minmax(min-height, 250px));
+    grid-auto-flow: dense;
+    align-items: stretch;
+    justify-items: center; */
+}
+
+.all .allskills .container {
+    min-width: 350px;
+    min-height: 200px;
+    height: min-content;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    padding: 15px;
+    background: var(--headback);
+    border-radius: 15px;
+    box-shadow: 0 0 10px grey;
+    margin: 40px 0 20px 10px;
+    float: left;
+}
+
+.all .allskills .container .headline {
+    color: var(--bodyback);
+    width: max-content;
+    justify-self: center;
+    align-self: center;
+    font-size: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px 15px;
+    margin-bottom: -30px;
+    position: relative;
+    top: -45px;
+    background-color: var(--menuback);
+    border-radius: 30px;
+}
+
+.all .allskills .container .lang {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.all .allskills .container .lang ul {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.all .allskills .container .lang ul li {
+    list-style-type: none;
+    margin: 0px;
+    padding: 7px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.all .allskills .container .lang ul li .langlogo {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.all .allskills .container .lang ul li div span {
+    color: var(--bodyback);
+}
+
+.all .allskills .container .lang ul li a {
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.all .allskills .container .lang ul li .barcon {
+    width: 200px;
+    height: 30px;
+    border: 2px solid white;
+    align-self: center;
+    margin-left: 40px;
+    justify-self: right;
+    padding: 2px;
+}
+
+.all .allskills .container .lang ul li .barcon .bar {
+    height: 100%;
+    background: var(--logoColor);
+}
+
+.all .allskills .alllang .lang ul .java a {
+    color: orange;
+}
+
+.all .allskills .alllang .lang ul .js a {
+    color: yellow;
+}
+
+.all .allskills .alllang .lang ul .c a {
+    color: white;
+}
+
+.all .allskills .alllang .lang ul .css a {
+    color: rgb(13, 165, 236);
+}
+
+.all .allskills .alllang .lang ul .html a {
+    color: orange;
+}
+
+.all .allskills .alllang .lang ul .java .bar {
+    width: var(--java);
+}
+
+.all .allskills .alllang .lang ul .js .bar {
+    width: var(--js);
+}
+
+.all .allskills .alllang .lang ul .c .bar {
+    width: var(--c);
+}
+
+.all .allskills .alllang .lang ul .css .bar {
+    width: var(--css);
+}
+
+.all .allskills .alllang .lang ul .html .bar {
+    width: var(--html);
+}
+
+.all .allskills .webtech .lang ul .servlet a {
+    color: orange;
+}
+
+.all .allskills .webtech .lang ul .jsp a {
+    color: rgb(13, 134, 233);
+}
+
+.all .allskills .webtech .lang ul .servlet .bar {
+    width: var(--servlet);
+}
+
+.all .allskills .webtech .lang ul .jsp .bar {
+    width: var(--jsp);
+}
+
+.all .allskills .framework .lang ul .sb a {
+    color: rgb(13, 233, 13);
+}
+
+.all .allskills .framework .lang ul .sb .bar {
+    width: var(--springboot);
+}
+
+.all .allskills .library .lang ul .jq a {
+    color: yellow;
+}
+
+.all .allskills .library .lang ul .jq .bar {
+    width: var(--jq);
+}
+
+.all .allskills .dbms .lang ul .mysql a {
+    color: orange;
+}
+
+.all .allskills .dbms .lang ul .mysql .bar {
+    width: var(--mysql);
+}
+
+footer {
+    width: 100%;
+    background: var(--headback);
+    clear: both;
+    height: 45px;
+    text-align: right;
+    line-height: 1.7;
+    position: relative;
+    bottom: 0;
+    font-size: 1.4em;
+    padding-right: 1em;
+    color: var(--bodyback);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width:1275px) {
+    .all .allskills {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+    .all .allskills .container {
+        min-height: 250px;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .all .head {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    .all .allskills {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: -20px;
+    }
+}
