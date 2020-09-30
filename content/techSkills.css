@@ -133,6 +133,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: space-between;
 }
 
 .all .allskills .container .lang ul {
@@ -140,6 +141,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .all .allskills .container .lang ul li {
@@ -183,16 +185,16 @@ body {
     background: var(--logoColor);
 }
 
-.all .allskills .alllang .lang ul .java a {
-    color: orange;
+.all .allskills .alllang .lang ul .java a img {
+    width: 55px;
 }
 
 .all .allskills .alllang .lang ul .js a {
     color: yellow;
 }
 
-.all .allskills .alllang .lang ul .c a {
-    color: white;
+.all .allskills .alllang .lang ul .c a img {
+    width: 37px;
 }
 
 .all .allskills .alllang .lang ul .css a {
@@ -223,12 +225,12 @@ body {
     width: var(--html);
 }
 
-.all .allskills .webtech .lang ul .servlet a {
-    color: orange;
+.all .allskills .webtech .lang ul .servlet a img {
+    width: 35px;
 }
 
-.all .allskills .webtech .lang ul .jsp a {
-    color: rgb(13, 134, 233);
+.all .allskills .webtech .lang ul .jsp a img {
+    width: 35px;
 }
 
 .all .allskills .webtech .lang ul .servlet .bar {
@@ -239,16 +241,20 @@ body {
     width: var(--jsp);
 }
 
-.all .allskills .framework .lang ul .sb a {
-    color: rgb(13, 233, 13);
+.all .allskills .framework .lang ul .sb a img {
+    width: 40px;
 }
 
 .all .allskills .framework .lang ul .sb .bar {
     width: var(--springboot);
 }
 
-.all .allskills .library .lang ul .jq a {
-    color: yellow;
+.all .allskills .library .lang ul .jq a img {
+    width: 40px;
+    background: blue;
+    padding: 5px;
+    border-radius: 10px;
+    mix-blend-mode: hard-light;
 }
 
 .all .allskills .library .lang ul .jq .bar {
