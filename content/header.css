@@ -173,6 +173,7 @@
     margin-left: 70px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .header .toplinks ul li {

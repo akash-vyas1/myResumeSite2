@@ -78,6 +78,10 @@ body {
     text-decoration: underline var(--logoColor);
 }
 
+.all .header .toplinks {
+    margin-top: -7px;
+}
+
 .all .allskills {
     width: 100%;
     box-sizing: border-box;
