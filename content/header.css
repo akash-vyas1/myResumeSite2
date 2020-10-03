@@ -78,13 +78,15 @@
     height: 70px;
     box-sizing: border-box;
     /* background: var(--menuback); */
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0;
     align-self: start;
     display: flex;
     cursor: pointer;
     transition: all linear;
+    z-index: 10;
+    /* background: white; */
 }
 
 .header .menubtn .middle {
@@ -135,10 +137,10 @@
     background: var(--menuback);
     display: none;
     box-shadow: 0 0 10px var(--headback);
-    position: relative;
+    position: fixed;
     top: 70px;
     left: 0;
-    z-index: 2;
+    z-index: 10;
 }
 
 .links ul li a {

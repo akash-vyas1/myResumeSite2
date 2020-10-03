@@ -59,7 +59,7 @@
         /* background-color: var(--headback); */
         box-sizing: border-box;
         /* box-shadow: 0 0 5px black; */
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         z-index: 15;
@@ -96,8 +96,8 @@
         height: 70px;
         box-sizing: border-box;
         /* background: var(--menuback); */
-        position: absolute;
-        top: 0px;
+        position: fixed;
+        top: -5px;
         left: 0;
         align-self: start;
         display: flex;
@@ -153,10 +153,10 @@
         background: var(--menuback);
         display: none;
         box-shadow: 0 0 10px var(--headback);
-        position: relative;
-        top: 70px;
+        position: fixed;
+        top: 80px;
         left: 0;
-        z-index: 2;
+        z-index: 20;
     }
     
     .links ul li a {
@@ -213,6 +213,37 @@
     .header .toplinks ul li a:hover {
         color: var(--logoColor);
         transform: scale(1.13);
+    }
+    
+    .all .header .contact {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .all .header .contact a {
+        font-size: 30px;
+        text-decoration: none;
+        color: white;
+        transform: scale(1);
+    }
+    
+    .all .header .contact a span {
+        font-size: 15px;
+        font-weight: 300;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        position: relative;
+        left: -22px;
+        transform: scale(1);
+    }
+    
+    .all .header .contact:hover {
+        transform: scale(1.1);
+    }
+    
+    .all .header .contact a:hover {
+        color: var(--logoColor);
     }
     
     .all {
@@ -294,26 +325,28 @@
     }
     
     .main .left .hireme {
-        width: max-content;
+        width: min-content;
         /* margin: 12px auto; */
         margin-left: 70px;
         display: flex;
         flex-direction: column;
         position: relative;
         top: -25px;
-        left: 60px;
+        left: -30px;
     }
     
     .main .left .hireme ul li {
-        width: 150px;
+        width: max-content;
         display: inline-flex;
         flex-direction: column;
         list-style-type: none;
         background: var(--menuback);
         border-radius: 10px;
+        transition: 0.2s linear;
     }
     
     .main .left .hireme ul li a {
+        width: max-content;
         font-size: 25px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         padding: 5px 20px;
@@ -326,10 +359,8 @@
         /* line-height: 1.5; */
     }
     
-    .main .left .hireme ul li:hover a {
-        letter-spacing: 1.5;
-        color: var(--logoColor);
-        font-weight: 400;
+    .main .left .hireme ul li:hover {
+        transform: scale(1.1);
     }
     
     .main .right {
