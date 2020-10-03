@@ -79,7 +79,7 @@
     box-sizing: border-box;
     /* background: var(--menuback); */
     position: fixed;
-    top: 0px;
+    top: 0;
     left: 0;
     align-self: start;
     display: flex;
@@ -132,13 +132,23 @@
     transform: rotate(-45deg);
 }
 
+.header .menu .menutext {
+    color: var(--menuback);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 8px;
+    font-size: 15px;
+    position: fixed;
+    top: 55px;
+    font-weight: 700;
+}
+
 .links {
     width: 250px;
     background: var(--menuback);
     display: none;
     box-shadow: 0 0 10px var(--headback);
     position: fixed;
-    top: 70px;
+    top: 85px;
     left: 0;
     z-index: 10;
 }
