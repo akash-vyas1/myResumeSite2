@@ -1,6 +1,7 @@
 console.log("Welcome to my site !");
 
 const menu_button = document.querySelector(".header .menu .menubtn");
+const body = document.getElementsByTagName('body');
 var menuText = document.querySelector(".menu .menutext");
 
 let menuopen = false;
@@ -19,7 +20,9 @@ menu_button.addEventListener("click", () => {
     }
 });
 
+
 const menuLinkClick = document.querySelector(".menu .links");
+
 menuLinkClick.addEventListener("click", () => {
     menu_button.classList.remove("open");
     menuopen = false;

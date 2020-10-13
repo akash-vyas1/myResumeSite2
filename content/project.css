@@ -1,14 +1,3 @@
-html,
-body {
-    height: 100%;
-    background: rgb(184, 190, 192) url("../images/eduBack.jpg");
-    background-size: cover;
-    background-position: center;
-    background-origin: border-box;
-    background-attachment: fixed;
-    background-blend-mode: soft-light;
-}
-
 .all {
     width: 100%;
     height: 100%;
@@ -33,11 +22,10 @@ body {
 }
 
 .all .allproj .project {
-    min-width: 300px;
-    width: 357px;
-    min-height: min-content;
-    padding: 15px;
-    margin: 20px;
+    width: 400px;
+    min-height: 300px;
+    padding: 10px;
+    margin: 15px;
     display: flex;
     flex-direction: column;
     background: var(--headback);

@@ -27,13 +27,6 @@
 .all {
     width: 100%;
     min-height: 100%;
-    background: rgb(184, 190, 192) url("../images/eduBack.jpg");
-    background-size: cover;
-    background-position: center;
-    background-origin: border-box;
-    background-attachment: fixed;
-    background-blend-mode: soft-light;
-    font-family: 'poppins', sans-serif;
 }
 
 .all .head {

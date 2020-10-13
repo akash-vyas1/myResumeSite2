@@ -1,14 +1,4 @@
     @import url("mediaQueries.css");
-    html {
-        height: 100%;
-    }
-    
-    body {
-        scroll-behavior: smooth;
-        scroll-snap-type: both mandatory;
-        height: 100%;
-    }
-    
     .all {
         width: 100%;
         min-height: 100%;
@@ -16,12 +6,6 @@
         transform-style: preserve-3d;
         perspective: 500px;
         overflow: hidden;
-        background: url("images/mainback.jpg");
-        background-size: cover;
-        background-position: center;
-        background-origin: border-box;
-        background-attachment: fixed;
-        background-blend-mode: soft-light;
         /* padding-top: 60px; */
     }
     
