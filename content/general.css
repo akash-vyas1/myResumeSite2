@@ -14,7 +14,9 @@ body {
     box-sizing: border-box;
     height: 100%;
     min-width: 100%;
-    background: linear-gradient(to bottom, hsl(250, 12%, 80%), hsl(250, 12%, 90%), hsl(250, 12%, 100%));
+    /* background: linear-gradient(to bottom, hsl(250, 12%, 80%), hsl(250, 12%, 90%), hsl(250, 12%, 100%));
+    */
+    background-image: linear-gradient(to bottom, #ffffff 10%, hsl(200, 36%, 78%));
     background-size: cover;
     background-position: center;
     background-origin: border-box;

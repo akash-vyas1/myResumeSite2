@@ -22,65 +22,75 @@
         padding-bottom: 0.5em;
         /* margin-top: 60px; */
         padding-top: 60px;
+        margin-bottom: 20px;
     }
     
     .main .left {
         width: 400px;
-        height: 500px;
+        height: 450px;
         position: relative;
-        perspective: 800px;
-        user-select: none;
+        top: 30px;
+    }
+    
+    .main .left .back {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        background: var(--linksback) url("paaatterns/SVG/Clarence.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 50px;
+        background-size: 215%;
+        transform: rotate(0deg);
+        opacity: 0.6;
+    }
+    
+    .main .left .img {
+        width: 350px;
+        height: 450px;
+        margin: 0 auto;
     }
     
     .main .left img {
         width: 100%;
         height: 100%;
-        transform-style: preserve-3d;
-        transform: rotateY(7deg) scale(0.9);
-        transition: 0.4s linear;
+        transition: all 0.2s linear;
+        user-select: none;
     }
     
     .main .left img:hover {
-        transform: rotateY(-2deg) scale(1);
+        transform: scale(1.08) translateY(-10px);
     }
     
-    .main .left .hireme {
-        width: min-content;
-        /* margin: 12px auto; */
-        margin-left: 70px;
-        display: flex;
-        flex-direction: column;
+    .main .left .hire {
+        width: max-content;
+        z-index: 1;
+        position: absolute;
+        bottom: -25px;
+        left: 15%;
+        border-radius: 15px;
+        overflow: hidden;
+        transition: all 0.25s ease-in-out;
+    }
+    
+    .main .left .hire a {
         position: relative;
-        top: -25px;
-        left: -30px;
-    }
-    
-    .main .left .hireme ul li {
-        width: max-content;
-        display: inline-flex;
-        flex-direction: column;
-        list-style-type: none;
-        background: var(--menuback);
-        border-radius: 10px;
-        transition: 0.2s linear;
-    }
-    
-    .main .left .hireme ul li a {
-        width: max-content;
-        font-size: 25px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        padding: 5px 20px;
-        /* margin: auto 10px; */
-        text-align: center;
-        color: var(--bodyback);
+        display: block;
+        padding: 10px 20px;
         text-decoration: none;
-        transition: 0.2s linear;
-        font-weight: 200;
-        /* line-height: 1.5; */
+        font-size: 20px;
+        font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 500;
+        color: white;
+        border-radius: 15px;
+        background: var(--menutext);
+        border: 2px solid hsl(0, 0%, 75%);
     }
     
-    .main .left .hireme ul li:hover {
-        transform: scale(1.1);
+    .main .left .hire:hover {
+        transform: scale(1.07);
+        box-shadow: 0 0 7px hsl(0, 0%, 25%);
     }
     
     .main .right {
@@ -97,9 +107,9 @@
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         text-transform: capitalize;
         letter-spacing: 1.2px;
-        color: lawngreen;
+        color: var(--back);
         padding: 5px 20px 5px 0;
-        font-size: 20px;
+        font-size: 25px;
         position: relative;
         bottom: 20px;
         font-weight: 600;
@@ -111,11 +121,12 @@
         text-transform: capitalize;
         letter-spacing: 1.2px;
         /* text-decoration: underline solid var(--bodyback); */
-        color: var(--logoColor);
+        color: #1d2541;
         padding: 5px 20px 5px 0;
         font-size: 60px;
         position: relative;
         bottom: 20px;
+        font-weight: 750;
     }
     
     .main .right .para {
@@ -128,13 +139,15 @@
         color: black;
         font-weight: 600;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding-bottom: 30px;
+        border-bottom: 5px solid var(--linksback);
     }
     
     .main .right .cert {
         width: 200px;
         height: 100px;
         position: relative;
-        top: 70px;
+        top: 30px;
         user-select: none;
     }
     
@@ -144,27 +157,29 @@
         /* transform: scale(1.15); */
         background: var(--bodyback);
         border-radius: 20px;
-        transition: 0.3s linear;
+        transition: 0.2s linear;
+        background: hsl(0, 0%, 97%);
     }
     
     .main .right .cert:hover img {
-        background: whitesmoke;
+        background: white;
         box-shadow: 0 0 7px grey;
     }
     
     .footermain {
         width: 100%;
         /* background: var(--headback); */
-        height: 45px;
-        margin-top: auto;
-        position: relative;
+        height: 40px;
+        position: absolute;
         bottom: 0;
         left: 0;
-        font-size: 1.4em;
+        font-weight: 500;
+        font-size: 22px;
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        padding-right: 1em;
-        color: var(--certColor);
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding-right: 1.5em;
+        color: var(--back);
+        background: var(--menutext);
+        font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
     }

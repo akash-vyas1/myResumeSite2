@@ -1,3 +1,9 @@
+@media screen and (max-width:1400px) {
+    .main {
+        margin-bottom: 100px !important;
+    }
+}
+
 @media screen and (max-width:990px) and (min-width:750px) {
     .main {
         margin: auto;
@@ -8,13 +14,14 @@
         align-items: center;
         justify-content: center;
         padding-bottom: 6em !important;
+        padding-top: 100px;
     }
     footer {
         position: relative;
         bottom: 0;
     }
     .main .right {
-        padding-top: 70px;
+        padding-top: 120px;
     }
 }
 
@@ -28,12 +35,14 @@
         align-items: center;
         justify-content: center;
         padding-bottom: 6em !important;
+        padding-top: 100px !important;
+        margin-bottom: 50px !important;
     }
     footer {
         position: relative;
         bottom: 0;
     }
     .main .right {
-        padding-top: 70px;
+        padding-top: 120px;
     }
 }
