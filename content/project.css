@@ -120,20 +120,6 @@
     font-style: italic;
 }
 
-.footer {
-    width: 100%;
-    background: var(--headback);
-    height: 45px;
-    text-align: right;
-    line-height: 1.7;
-    position: relative;
-    bottom: 0;
-    font-size: 1.4em;
-    padding-right: 1em;
-    color: var(--bodyback);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 @media screen and (max-width:850px) {
     .all .headline {
         padding-top: 100px;

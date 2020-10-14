@@ -220,21 +220,6 @@
     width: var(--mysql);
 }
 
-footer {
-    width: 100%;
-    background: var(--headback);
-    clear: both;
-    height: 45px;
-    text-align: right;
-    line-height: 1.7;
-    position: relative;
-    bottom: 0;
-    font-size: 1.4em;
-    padding-right: 1em;
-    color: var(--bodyback);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 @media screen and (max-width:1275px) {
     .all .allskills {
         display: flex;

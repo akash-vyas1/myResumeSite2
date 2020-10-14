@@ -19,10 +19,9 @@
         justify-content: space-evenly;
         align-items: space-around;
         overflow: visible !important;
-        padding-bottom: 0.5em;
         /* margin-top: 60px; */
         padding-top: 60px;
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
     }
     
     .main .left {
@@ -166,20 +165,6 @@
         box-shadow: 0 0 7px grey;
     }
     
-    .footermain {
-        width: 100%;
-        /* background: var(--headback); */
-        height: 40px;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        font-weight: 500;
-        font-size: 22px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        padding-right: 1.5em;
-        color: var(--back);
-        background: var(--menutext);
-        font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+    footer {
+        margin-top: -25px;
     }

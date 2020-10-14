@@ -62,9 +62,7 @@
 
 .education .container .card {
     min-height: 300px;
-    max-height: min-content;
-    min-width: 270px;
-    max-width: 350px;
+    width: 320px;
     padding: 0px 30px 40px 30px;
     margin: 15px;
     background: var(--headback);
@@ -132,21 +130,6 @@
 
 .education .container .card:hover {
     transform: scale(1.04);
-}
-
-.footer {
-    background: var(--footerback);
-    color: #f7f5eb;
-    text-align: center;
-    height: 40px;
-    text-align: right;
-    padding-right: 25px;
-    line-height: 40px;
-    font-size: 20px;
-    width: 100%;
-    position: relative;
-    bottom: 0;
-    font-family: 'poppins', sans-serif;
 }
 
 @media screen and (max-width:850px) {

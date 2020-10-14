@@ -142,21 +142,6 @@
     color: #ff8300;
 }
 
-.footer {
-    background: var(--footerback);
-    color: #f7f5eb;
-    text-align: center;
-    height: 40px;
-    text-align: right;
-    padding-right: 25px;
-    line-height: 40px;
-    font-size: 20px;
-    width: 100%;
-    position: relative;
-    bottom: 0;
-    font-family: 'poppins', sans-serif;
-}
-
 @media screen and (min-width:750px) and (max-width:1175px) {
     .all .certs .container .text {
         margin-top: 30px;

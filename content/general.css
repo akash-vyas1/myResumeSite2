@@ -5,7 +5,7 @@
 }
 
 html {
-    min-height: 100%;
+    min-height: 100vh;
 }
 
 body {
@@ -23,4 +23,21 @@ body {
     background-attachment: fixed;
     background-blend-mode: soft-light;
     font-family: 'poppins', sans-serif;
+}
+
+footer {
+    color: white;
+    background: var(--menutext);
+    height: 40px;
+    padding-right: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 22px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+    clear: both;
+    font-weight: 500;
 }
