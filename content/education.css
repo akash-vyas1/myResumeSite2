@@ -1,6 +1,7 @@
 .education {
     width: 100%;
     min-height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .education img {
@@ -58,21 +59,24 @@
     align-content: center;
     width: 100%;
     min-height: 489px;
+    overflow: hidden;
 }
 
 .education .container .card {
     min-height: 300px;
     width: 320px;
     padding: 0px 30px 40px 30px;
-    margin: 15px;
+    /* margin-left: 40px; */
+    margin: 0 auto;
     background: var(--headback);
     box-shadow: 6px 6px 10px rgba(1, 12, 27, 0.7);
     border-image-width: 150px;
-    background-image: url("../images/27610.jpg");
+    background: url("../images/27610.jpg");
     background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
     transition: 0.2s ease-in-out;
+    border-radius: 30px;
 }
 
 .education .container .card .contentbox {
@@ -82,17 +86,17 @@
 
 .education .container .card h2 {
     position: relative;
-    top: 0px;
-    left: -30px;
-    width: 121%;
+    top: -25px;
+    left: 0px;
+    width: 100%;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     line-height: 0;
-    border-radius: 0 0 10px 10px;
+    border-radius: 10px;
     height: 50px;
-    background: var(--headback);
-    color: #32a3b1;
+    background: var(--linksback);
+    color: white;
     text-decoration: none;
     text-align: center;
     font-size: 35px;
@@ -106,6 +110,7 @@
 .education .container .card .contentbox .text span {
     display: inline;
     color: var(--bodyback);
+    color: rgb(230, 230, 230);
     text-align: left;
     margin: 10px;
     font-weight: 600;
@@ -140,10 +145,13 @@
     .education .container {
         padding-top: 60px;
     }
+    .education .container .card:not(:first-child) {
+        margin-top: 80px;
+    }
 }
 
 @media screen and (max-width:1229px) {
     .education .container {
-        padding-top: 60px;
+        padding-top: 90px;
     }
 }
