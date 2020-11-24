@@ -37,12 +37,13 @@
     min-height: 100%;
     box-sizing: border-box;
     margin-top: 25px;
-    padding-left: 65px;
+    padding-left: 7%;
+    padding-right: 2%;
 }
 
 .all .allskills .container {
     width: 350px;
-    min-height: 215px;
+    min-height: 230px;
     background: var(--headback);
     border-radius: 20px;
     display: flex;
@@ -167,4 +168,10 @@
 
 .jsp .barcon .bar {
     width: var(--jsp);
+}
+
+@media screen and (max-width:1000px) {
+    .head {
+        margin-top: 75px;
+    }
 }
