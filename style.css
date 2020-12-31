@@ -144,6 +144,9 @@ body {
         flex-direction: column;
         margin-bottom: -5px;
     }
+    .main .right .text .hello .name {
+        margin-bottom: 10px;
+    }
     .main .cert {
         margin-bottom: 30px;
     }

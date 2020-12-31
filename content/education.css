@@ -1,6 +1,7 @@
 .education {
     width: 100%;
     min-height: 100%;
+    margin-bottom: -9px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -59,7 +60,7 @@
     align-content: center;
     width: 100%;
     min-height: 489px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .education .container .card {
@@ -67,7 +68,7 @@
     width: 320px;
     padding: 0px 30px 40px 30px;
     /* margin-left: 40px; */
-    margin: 0 auto;
+    margin: 35px 25px;
     background: var(--headback);
     box-shadow: 6px 6px 10px rgba(1, 12, 27, 0.7);
     border-image-width: 150px;
@@ -135,4 +136,10 @@
 
 .education .container .card:hover {
     transform: scale(1.04);
+}
+
+@media (max-width:750px) {
+    .education {
+        margin-top: 70px;
+    }
 }

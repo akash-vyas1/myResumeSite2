@@ -97,17 +97,17 @@
 
 .all .certs .container .img .num {
     height: min-content;
-    padding: 7px;
-    width: 40px;
+    padding: 5px;
+    width: 30px;
     border-radius: 10px;
-    font-size: 25px;
+    font-size: 20px;
     background: var(--headback);
     color: orange;
     box-shadow: 0 0 5px rgb(53, 53, 53);
     margin-right: 10px;
     position: relative;
-    top: 25px;
-    left: -15px;
+    top: 30px;
+    left: -5px;
 }
 
 .all .certs .container .text {

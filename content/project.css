@@ -23,7 +23,7 @@
 }
 
 .all .allproj .project {
-    width: 440px;
+    width: 435px;
     min-height: 300px;
     padding: 10px;
     margin: 15px;
@@ -35,27 +35,27 @@
     color: whitesmoke;
     margin-left: 25px;
     justify-content: center;
-    margin-left: 80px;
+    margin-left: 85px;
 }
 
 .all .allproj .project .numcontainer {
     width: 41px;
     height: 41px;
     position: relative;
-    top: -25px;
-    left: -25px;
+    top: -22px;
+    left: -20px;
 }
 
 .all .allproj .project .numcontainer .num {
     width: 98%;
     height: 98%;
     line-height: 1.4;
-    background-color: var(--logoColor);
+    background-color: var(--menuback);
     font-size: 25px;
     text-align: center;
     border-radius: 10px;
-    color: var(--menuback);
-    box-shadow: 0 0 5px grey;
+    color: var(--logoColor);
+    /* box-shadow: 0 0 5px grey; */
     z-index: 30;
 }
 
