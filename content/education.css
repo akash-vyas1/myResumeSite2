@@ -136,22 +136,3 @@
 .education .container .card:hover {
     transform: scale(1.04);
 }
-
-@media screen and (max-width:850px) {
-    .education>h2 {
-        padding-left: 50px;
-        padding-top: 90px;
-    }
-    .education .container {
-        padding-top: 60px;
-    }
-    .education .container .card:not(:first-child) {
-        margin-top: 80px;
-    }
-}
-
-@media screen and (max-width:1229px) {
-    .education .container {
-        padding-top: 90px;
-    }
-}
