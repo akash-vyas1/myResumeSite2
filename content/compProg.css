@@ -1,6 +1,7 @@
 .all {
     width: 100%;
     min-height: 100%;
+    min-height: min-content;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

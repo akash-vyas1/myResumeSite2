@@ -8,7 +8,7 @@ body {
     scroll-behavior: smooth;
     scroll-snap-type: both mandatory;
     box-sizing: border-box;
-    min-height: 100vh;
+    min-height: 100%;
     max-width: 100%;
     /* background: linear-gradient(to bottom, hsl(250, 12%, 80%), hsl(250, 12%, 90%), hsl(250, 12%, 100%));
     */
