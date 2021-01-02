@@ -1,11 +1,10 @@
 .all {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     display: flex;
     flex-direction: column;
     justify-content: space-betwee;
     align-items: center;
     justify-content: center;
-    margin-top: -40px;
 }
 
 .all .main {
@@ -18,8 +17,9 @@
     box-sizing: border-box;
     padding: 15px;
     margin: 10px;
-    margin-bottom: 0;
+    margin-bottom: 80px;
     padding-bottom: 0;
+    margin-top: 80px;
 }
 
 .left,
@@ -130,11 +130,15 @@
     color: crimson;
     margin-top: 10px;
     font-size: 1.25em;
+    font-weight: 800;
 }
 
 @media (max-width:750px) {
     .all {
         margin-top: 0;
+    }
+    .all .main {
+        margin-top: 10px;
     }
     .main .right .text {
         width: 425px !important;
