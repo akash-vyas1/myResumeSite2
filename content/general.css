@@ -12,14 +12,27 @@ body {
     max-width: 100%;
     /* background: linear-gradient(to bottom, hsl(250, 12%, 80%), hsl(250, 12%, 90%), hsl(250, 12%, 100%));
     */
-    background-image: linear-gradient(to bottom, #ffffff 10%, hsl(200, 36%, 78%));
+    /* background-image: linear-gradient(to bottom, #ffffff 10%, hsl(200, 36%, 78%)); */
+    background: #e7e7e7;
     background-size: cover;
     background-position: center;
     background-origin: border-box;
     background-attachment: fixed;
     background-blend-mode: soft-light;
     font-family: 'poppins', sans-serif;
+
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    /* overflow: hidden; */
+
 }
+
 
 footer {
     color: white;
@@ -31,6 +44,5 @@ footer {
     justify-content: flex-end;
     font-size: 22px;
     width: 100%;
-    font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
 }

@@ -4,5 +4,27 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"cSpell.words": [
+			"CGPA",
+			"GARAM",
+			"Javahar",
+			"animatelogo",
+			"bodyfont",
+			"celadonblue",
+			"certimg",
+			"contentfont",
+			"headback",
+			"headlinefont",
+			"linkhovercolor",
+			"linksback",
+			"logofont",
+			"menubtn",
+			"menuopen",
+			"myimg",
+			"notmenu",
+			"prussianblue",
+			"toplinks"
+		]
+	}
 }
