@@ -1,51 +1,3 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-@font-face {
-    font-family: logoFont;
-    src: url("fonts/AUBREY1__.TTF");
-}
-
-@font-face {
-    font-family: bodyfont;
-    src: url("fonts/Garamond\ Bold\ font.ttf");
-}
-
-@font-face {
-    font-family: headlinefont;
-    src: url("fonts/Garamond\ Bold\ font.ttf");
-}
-
-@font-face {
-    font-family: contentfont;
-    src: url("fonts/GARAM.ttf");
-}
-
-:root {
-    --bodyback: #ebebeb;
-    --logoColor: #f7ce3e;
-    --certColor: #f5f5f5;
-    --linksColor: #f5f5f5;
-    --headback: #1a2930;
-    --menuback: #0b3c5d;
-    --footerback: var(--headback);
-    --menuLinkcolor: #c5c1c0;
-    --menuLinkHoverback: var(--bodyback);
-    --logofont: logofont;
-    --bodyfont: bodyfont;
-    --headlinefont: headlinefont;
-    --textcolor: #c5c1c0;
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 .all .home {
     width: 150px;
     height: 50px;
@@ -75,13 +27,6 @@
 .all {
     width: 100%;
     min-height: 100%;
-    background: rgb(184, 190, 192) url("../images/eduBack.jpg");
-    background-size: cover;
-    background-position: center;
-    background-origin: border-box;
-    background-attachment: fixed;
-    background-blend-mode: soft-light;
-    font-family: 'poppins', sans-serif;
 }
 
 .all .head {
@@ -105,7 +50,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     box-sizing: border-box;
 }
 
@@ -120,15 +65,15 @@
     justify-self: center;
     padding-bottom: 20px;
     padding-top: 5px;
-    padding-left: 75px;
+    padding-left: 90px;
 }
 
-.all .certs .container:first-child {
-    margin-top: -10px;
+.all .certs .container:last-child {
+    margin-bottom: 20px;
 }
 
 .all .certs .container:first-child .topbor {
-    width: 150%;
+    width: 100%;
     height: 5px;
     background: none;
     margin-top: 0px;
@@ -139,7 +84,8 @@
     width: 150%;
     height: 5px;
     background: var(--headback);
-    margin-top: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     border-radius: 10px;
 }
 
@@ -151,17 +97,17 @@
 
 .all .certs .container .img .num {
     height: min-content;
-    padding: 7px;
-    width: 40px;
+    padding: 5px;
+    width: 30px;
     border-radius: 10px;
-    font-size: 25px;
+    font-size: 20px;
     background: var(--headback);
-    color: #ED1B24;
+    color: orange;
     box-shadow: 0 0 5px rgb(53, 53, 53);
     margin-right: 10px;
     position: relative;
-    top: 25px;
-    left: -15px;
+    top: 30px;
+    left: -5px;
 }
 
 .all .certs .container .text {
@@ -195,21 +141,6 @@
     margin-top: 10px;
     font-style: italic;
     color: #ff8300;
-}
-
-.footer {
-    background: var(--footerback);
-    color: #f7f5eb;
-    text-align: center;
-    height: 40px;
-    text-align: right;
-    padding-right: 25px;
-    line-height: 40px;
-    font-size: 20px;
-    width: 100%;
-    position: relative;
-    bottom: 0;
-    font-family: 'poppins', sans-serif;
 }
 
 @media screen and (min-width:750px) and (max-width:1175px) {

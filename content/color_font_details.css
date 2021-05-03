@@ -1,0 +1,14 @@
+@font-face {
+    font-family: logoFont;
+    src: url("fonts/AUBREY1__.TTF");
+}
+
+:root {
+    --logoColor: #f7ce3e;
+    --headback: #1a2930;
+    --menuback: #0b3c5d;
+    --footerback: var(--headback);
+    --menuLinkcolor: #c5c1c0;
+    --menuLinkHoverback: var(--bodyback);
+    --textcolor: #c5c1c0;
+}

@@ -1,6 +1,11 @@
 console.log("Welcome to my site !");
+console.log("hello from script.js");
+
 
 const menu_button = document.querySelector(".header .menu .menubtn");
+const body = document.getElementsByTagName('body');
+var menuText = document.querySelector(".menu .menutext");
+
 let menuopen = false;
 let visible = true;
 menu_button.addEventListener("click", () => {
@@ -8,14 +13,18 @@ menu_button.addEventListener("click", () => {
         menu_button.classList.add("open");
         menuopen = true;
         visible = true;
+        menuText.innerHTML = "Close";
     } else {
         menu_button.classList.remove("open");
         menuopen = false;
         visible = false;
+        menuText.innerHTML = "Menu";
     }
 });
 
+
 const menuLinkClick = document.querySelector(".menu .links");
+
 menuLinkClick.addEventListener("click", () => {
     menu_button.classList.remove("open");
     menuopen = false;
@@ -24,6 +33,7 @@ menuLinkClick.addEventListener("click", () => {
 
 
 const menu = document.querySelector(".menu");
+
 
 menu.addEventListener("click", () => {
     if (visible) {

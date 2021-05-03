@@ -1,60 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-@font-face {
-    font-family: logoFont;
-    src: url("fonts/AUBREY1__.TTF");
-}
-
-@font-face {
-    font-family: bodyfont;
-    src: url("fonts/Garamond\ Bold\ font.ttf");
-}
-
-@font-face {
-    font-family: headlinefont;
-    src: url("fonts/Garamond\ Bold\ font.ttf");
-}
-
-@font-face {
-    font-family: contentfont;
-    src: url("fonts/GARAM.ttf");
-}
-
-:root {
-    --bodyback: #ebebeb;
-    --logoColor: #f7ce3e;
-    --certColor: #f5f5f5;
-    --linksColor: #f5f5f5;
-    --headback: #1a2930;
-    --menuback: #0b3c5d;
-    --footerback: var(--headback);
-    --menuLinkcolor: #c5c1c0;
-    --menuLinkHoverback: var(--bodyback);
-    --logofont: logofont;
-    --bodyfont: bodyfont;
-    --headlinefont: headlinefont;
-    --textcolor: #c5c1c0;
-}
-
-html,
-body {
-    width: 100%;
-    min-height: 100%;
-    background: rgb(184, 190, 192) url("../images/eduBack.jpg");
-    background-size: cover;
-    background-position: center;
-    background-origin: border-box;
-    background-attachment: fixed;
-    background-blend-mode: soft-light;
-}
-
 .all {
     width: 100%;
     min-height: 100%;
+    min-height: min-content;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -66,6 +13,8 @@ body {
     text-transform: capitalize;
     padding: 19px 0;
     margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
     text-decoration: underline var(--logoColor);
 }
 
@@ -172,7 +121,7 @@ body {
     background: #0c5476;
     border-radius: 5px;
     transform: rotate(0deg);
-    animation: animate 1.5s infinite linear;
+    /* animation: animate 1.5s infinite linear; */
     text-align: center;
 }
 
@@ -223,6 +172,12 @@ body {
     left: 10px;
 }
 
+.all .allcp .hackerrank .headline {
+    position: relative;
+    top: -45px;
+    left: 10px;
+}
+
 .all .allcp .pe ul li {
     padding: 10px;
 }
@@ -231,28 +186,19 @@ body {
     width: 200px;
 }
 
-footer {
-    width: 100%;
-    background: var(--headback);
-    clear: both;
-    height: 45px;
-    /* margin-top: -45px; */
-    text-align: right;
-    line-height: 1.7;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    font-size: 1.4em;
-    padding-right: 1em;
-    color: var(--bodyback);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 @media screen and (max-width:1150px) {
     .all .head {
         padding-top: 100px;
         padding-bottom: 50px;
         padding-left: 15px;
         padding-right: 15px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .all .head {
+        width: min-content !important;
+        text-align: center;
+        margin: auto;
     }
 }
