@@ -30,17 +30,11 @@
     font-family: aubreyFont;
     src: url(font/AUBREY1__.TTF);
 }
+@font-face {
+    font-family: royalFont;
+    src: url(font/RoyalInitialen.ttf);
+}
 
-/*
-body {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-}*/
 
 body section {
     /* border: 2px solid black; */
@@ -70,7 +64,7 @@ body section::-webkit-scrollbar-thumb {
 .home{
     width: 90%;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -94,13 +88,14 @@ body section::-webkit-scrollbar-thumb {
 
 .home-left-hello {
     /* border: 2px solid blue; */
-    width: max-content;
-    font-size: 65px;
-    font-family: breadlySerifFont;
+    /* width: max-content; */
+    font-size: 45px;
+    font-family: breadlySansfFont;
     /* color: rgb(2, 20, 34); */
-    color: #107185;
+    color: #4c5c68;
     position: relative;
     /* left: 28; */
+    
 }
 
 .home-left-name {
@@ -111,7 +106,7 @@ body section::-webkit-scrollbar-thumb {
     margin: 30px 0;
     color: var(--prussianblue);
     position: relative;
-    line-height: 0.65;
+    line-height: 1;
 }
 
 .home-left-para {
@@ -119,11 +114,13 @@ body section::-webkit-scrollbar-thumb {
     /* border: 2px solid purple; */
     font-family: sans-serif;
     font-size: 25px;
-    line-height: 1.5;
+    line-height: 1.25;
 }
 
 .home-left-certs {
     margin: 10px 0;
+    display: flex;
+    flex-direction: row;
 }
 
 .home-left-img {
@@ -147,21 +144,30 @@ body section::-webkit-scrollbar-thumb {
 
 .home-right {
     /* border: 2px solid red; */
-    height: 100%;
+    height: 90%;
     width: 350px;
     overflow: hidden;
-    position: relative;
-    border-radius: 10px;
+    /* position: relative; */
+    border-radius: 40px;
+    margin-bottom: 15px;
+    background: radial-gradient( rgb(70, 106, 153)  ,rgb(22, 44, 75));
 }
 
 
 .home-right-logo {
-    width: 175%;
-    height: 110%;
+    width: 100%;
+    height: 100%;
     position: relative;
-    right: 175;
+    font-family: royalFont;
+    left: 30;
+    top: 30;
+    font-size: 400px;
     border-radius: 10px;
+    user-select: none;
+    /* color: var(--logoColor); */
+    color: #facd2c;
 }
+
 
 img{
     user-select: none;
@@ -179,5 +185,25 @@ img{
     }
     100% {
         transform: scale(1);
+    }
+}
+
+@media (min-width:350px) and  (max-width:1200px) {
+    .home{
+        /* border: 2px solid red ; */
+        flex-direction: row;
+    }
+    .home-left {
+        margin-top: 30px;
+    }
+    .home-left-para,
+    .home-left-name,
+    .home-left-hello{
+        text-align: center;
+    }
+    .home-left-certs {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center;
     }
 }
