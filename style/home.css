@@ -124,8 +124,8 @@ body section {
 
 .home-left-img:hover{
     border: 0px solid grey;
-    animation: animateCert 0.85s linear;
-    box-shadow: 0px 0px 10px rgb(149, 149, 149);
+    animation: animateImg 0.85s linear;
+    box-shadow: 0px 0px 7px rgb(114, 127, 129);
 }
 
 .home-right {
@@ -153,12 +153,17 @@ body section {
     color: #facd2c;
 }
 
+.home-right:hover {
+    animation: animateImg 0.85s linear;
+    box-shadow: 0px 0px 7px var(--gunmetal);
+}
+
 
 img{
     user-select: none;
 }
 
-@keyframes animateCert {
+@keyframes animateImg {
     25% {
         transform: scale(1.03);
     }
