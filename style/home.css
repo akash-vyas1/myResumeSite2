@@ -154,7 +154,7 @@ body section {
 }
 
 .home-right:hover {
-    animation: animateImg 0.85s linear;
+    animation: animateImg 0.75s linear;
     box-shadow: 0px 0px 7px var(--gunmetal);
 }
 
@@ -165,13 +165,13 @@ img{
 
 @keyframes animateImg {
     25% {
-        transform: scale(1.03);
+        transform: scale(1.02);
     }
     50% {
-        transform: scale(1.06);
+        transform: scale(1.04);
     }
     75% {
-        transform: scale(1.03);
+        transform: scale(1.02);
     }
     100% {
         transform: scale(1);

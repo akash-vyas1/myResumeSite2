@@ -16,4 +16,14 @@ $(document).ready(function () {
         $('.certificates').css("display","unset");
         console.log("Certificate panel");
     });
+    $('#openProject').click(function () { 
+        $('section').css("display","none");
+        $('.project').css("display","unset");
+        console.log("Project panel");
+    });
+    $('#openTechSkills').click(function () { 
+        $('section').css("display","none");
+        $('.techSkills').css("display","unset");
+        console.log("Technical skills panel");
+    });
 });
