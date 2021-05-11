@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+
+    --blue: #3d5a80ff;
+    --cerulean: #98c1d9ff;
+    --cyan: #e0fbfcff;
+    --sienna: #ee6c4dff;
+    --gunmetal: #293241ff;
+
+    --red: #e63946ff;
+    --lightblue: #f1faeeff;
+    --powderblue: #a8dadcff;
+    --celadonblue: #457b9dff;
+    --prussianblue: #1d3557ff; 
+
+    --java: 91%;
+    --c: 80%;
+    --js: 85%;
+    --css: 92%;
+    --html: 88%;
+    --jsp: 50%;
+    --servlet: 60%;
+    --spring: 50%;
+    --jquery: 80%;
+    --mysql: 75%;
+    --springboot:30%;
+
+}
+
+@font-face {
+    font-family: breadlySansFont;
+    src: url(../font/BreadleySans-Regular.ttf);
+}
+@font-face {
+    font-family: breadlySerifFont;
+    src: url(../font/BreadleySerif-Regular.ttf);
+}
+@font-face {
+    font-family: aubreyFont;
+    src: url(../font/AUBREY1__.TTF);
+}
+@font-face {
+    font-family: royalFont;
+    src: url(../font/RoyalInitialen.ttf);
+}
+
+
+body section {
+    /* border: 2px solid black; */
+    /* height: 510px; */
+    padding: 10px;
+    margin-top: 75px;
+    box-sizing: border-box;
+    overflow: auto;
+    border-radius: 7px;
+    width: 90%;
+}
+
+.all>h2{
+    color: var(--prussianblue);
+    font-size: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: underline var(--logoColor);
+    line-height: 1;
+    /* border: 5px solid var(--logoColor); */
+    padding: 10px;
+    border-radius: 10px;
+    /* background: rgb(216, 216, 216); */
+    /* position: absolute;
+    top: -5px; */
+}
+
+.all .allskills {
+    /* border: 2px solid saddlebrown; */
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    /* float: left; */
+}
+
+.all .allskills .container {
+    /* min-width: 850px;  */
+    width: 950px;
+    min-height: 200px;
+    background: rgb(218, 216, 216);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px;
+    margin-left: 0;
+    margin-right: 5px;
+    border: 3px solid grey;
+    position: relative;
+    /* float: left; */
+    /* border: 2px solid red; */
+}
+
+.all .allskills .container h3 {
+    background: var(--prussianblue);
+    color: whitesmoke;
+    width: max-content;
+    height: min-content;
+    padding: 7px;
+    border-radius: 10px;
+    position: relative;
+    top: -35px;
+    font-size: 22px;
+}
+
+.all .allskills .container ul{
+    /* border: 2px solid red; */
+    /* width: 100%; */
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 80px;
+    grid-row-gap: 10px;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-auto-rows: 1fr;
+    grid-auto-flow:row dense;
+}
+
+.all .allskills .container ul li {
+    /* border: 2px solid green; */
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin: 5px;
+    position: relative;
+    cursor: pointer;
+}
+.all .allskills .container ul li>div{
+    display: flex;
+    flex-direction: column;
+}
+
+li div span {
+    font-size: 22px;
+    font-weight: 550;
+}
+
+
+.all .allskills .container ul li .percentage{
+    position: absolute;
+    right: 0;
+    top: -35px;
+    background: var(--gunmetal);
+    color: whitesmoke;
+    border: 2px solid var(--gunmetal);
+    padding: 2px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.all .allskills .container ul li .percentage span {
+    font-size: 15px;
+    z-index: 10;
+}
+
+.all .allskills .container ul li .percentage::after{
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 25%;
+    width: 0;
+    height: 0;
+    border: 10px solid var(--gunmetal);
+    transform: rotate(45deg);
+    background-color: var(--gunmetal);
+    z-index: -1;
+}
+
+
+.all .allskills .container ul li .langlogo a {
+    font-size: 35px;
+}
+
+.all .allskills .container ul li .langlogo a img {
+    width: 40px;
+}
+
+.all .allskills .container ul li .langlogo .java {
+    color: rgb(144, 238, 255);
+}
+
+.all .allskills .container ul li .langlogo .js {
+    color: #e7b84b;
+}
+
+.all .allskills .container ul li .langlogo .css {
+    color: rgb(15, 138, 219);
+}
+
+.all .allskills .container ul li .langlogo .html {
+    color: orange;
+}
+
+.all .allskills .container ul li .langlogo img {
+    width: 40px;
+}
+
+.all .allskills .container ul li .langlogo .java img {
+    width: 45px;
+}
+
+.all .allskills .container ul li .langlogo .jq img {
+    width: 40px;
+}
+
+.barcon {
+    width: 175px !important;
+    border: 2px solid var(--gunmetal);
+    border-radius: 7px;
+    overflow: hidden;
+    height: 30px;
+    padding: 2px;
+    box-sizing: border-box;
+    background: var(--prussianblue);
+    display: flex;
+    justify-content: center;
+    /* box-shadow: inset 0 0 10px rgb(79, 114, 160); */
+}
+
+.barcon .bar {
+    height: 93%;
+    background: var(--powderblue);
+    border-radius: 5px;
+    animation: animateBar 0.75s ease-in-out;
+}
+
+@keyframes animateBar {
+    0%{
+        width: 0%;
+    }
+}
+
+.java .barcon .bar {
+    width: var(--java);
+}
+
+.c .barcon .bar {
+    width: var(--c);
+}
+
+.js .barcon .bar {
+    width: var(--js);
+}
+
+.css .barcon .bar {
+    width: var(--css);
+}
+
+.html .barcon .bar {
+    width: var(--html);
+}
+
+.spring .barcon .bar {
+    width: var(--spring);
+}
+
+.jq .barcon .bar {
+    width: var(--jquery);
+}
+
+.mysql .barcon .bar {
+    width: var(--mysql);
+}
+
+.servlet .barcon .bar {
+    width: var(--servlet);
+}
+
+.jsp .barcon .bar {
+    width: var(--jsp);
+}
+
+.springboot .barcon .bar {
+    width: var(--springboot);
+}
+
+@media screen and (max-width:1085px) and (min-width:675px) {
+    .all .allskills .container{
+        /* border: 2px solid teal; */
+        min-width: 330px;
+        max-width: 550px;
+    }
+    .all .allskills .container ul{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        margin: 0;
+    }
+    
+}
+
+@media screen and (max-width:675px) and (min-width:300px) {
+    .all .allskills .container{
+        /* border: 2px solid teal; */
+        /* min-width: 300px;
+        max-width: 450px; */
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .all .allskills .container ul{
+        /* width: 100%; */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    .all .allskills .container ul li .langlogo a img {
+        width: 20px !important;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width:955px) and (min-width:300px) {
+    /* .all .allskills{
+        border: 2px solid black;
+    } */
+    .all .allskills .container ul li .langlogo a img {
+        width: 30px !important;
+        height: 30px !important;
+    }
+}

@@ -11,26 +11,6 @@
     --mysql: 75%;
 }
 
-.all {
-    width: 100%;
-    min-height: 100%;
-    margin-top: 10px;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.all .head {
-    color: var(--menuback);
-    font-size: 50px;
-    text-align: center;
-    text-transform: capitalize;
-    padding: 19px 0;
-    text-decoration: underline var(--logoColor);
-}
-
-.all .header .toplinks {
-    margin-top: -7px;
-}
 
 .all .allskills {
     width: 100%;
