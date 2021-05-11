@@ -1,4 +1,4 @@
-.all {
+/* .all {
     width: 100%;
     min-height: 100%;
     min-height: min-content;
@@ -16,13 +16,10 @@
     margin-left: 15px;
     margin-right: 15px;
     text-decoration: underline var(--logoColor);
-}
+} */
 
-.all .header .toplinks {
-    margin-top: -7px;
-}
 
-.all .allcp {
+/* .all .allcp {
     width: 100%;
     min-height: 76.6vh;
     display: flex;
@@ -30,7 +27,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .all .allcp .container {
     min-height: 450px;
@@ -46,19 +43,6 @@
     margin-top: 30px;
     background: #20325b;
     border-radius: 20px;
-}
-
-.all .allcp .container .headline {
-    width: 30px;
-    background: var(--headback);
-    padding: 7px;
-    border-radius: 10px;
-    color: var(--logoColor);
-    text-align: center;
-    position: relative;
-    top: -30px;
-    left: 10px;
-    border: 2px solid var(--logoColor);
 }
 
 .all .allcp .container ul {
@@ -125,23 +109,6 @@
     text-align: center;
 }
 
-@keyframes animate {
-    0% {
-        transform: rotate(0deg);
-    }
-    25% {
-        transform: rotate(-1deg);
-    }
-    50% {
-        transform: rotate(-2deg);
-    }
-    75% {
-        transform: rotate(-1deg);
-    }
-    100% {
-        transform: rotate(0deg);
-    }
-}
 
 .all .allcp .container ul li:first-child a {
     margin-top: -10px;
@@ -184,21 +151,4 @@
 
 .all .allcp .pe ul li img {
     width: 200px;
-}
-
-@media screen and (max-width:1150px) {
-    .all .head {
-        padding-top: 100px;
-        padding-bottom: 50px;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-}
-
-@media screen and (max-width:650px) {
-    .all .head {
-        width: min-content !important;
-        text-align: center;
-        margin: auto;
-    }
 }

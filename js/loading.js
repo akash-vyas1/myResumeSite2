@@ -26,4 +26,9 @@ $(document).ready(function () {
         $('.techSkills').css("display","unset");
         console.log("Technical skills panel");
     });
+    $('#openCompProg').click(function () { 
+        $('section').css("display","none");
+        $('.compProg').css("display","unset");
+        console.log("Competitive Programming panel");
+    });
 });
